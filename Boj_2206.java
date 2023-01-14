@@ -5,7 +5,7 @@ public class Boj_2206 {
     static class Pair {
         int x;
         int y;
-        boolean chance;
+        boolean chance;         //벽 부수기 찬스를 썼는지 안썼는지
         int cnt;
         public Pair(int x, int y, boolean chance, int cnt) {
             this.x = x;
@@ -17,14 +17,8 @@ public class Boj_2206 {
     public static void main(String[] args) throws IOException {
 
 
-       // int n,m;
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-//        StringTokenizer st = new StringTokenizer(bf.readLine());
-//
-//        n = Integer.parseInt(st.nextToken());
-//        m = Integer.parseInt(st.nextToken());
-
-        String[] inputs = bf.readLine().split(" ");
+        String[] inputs = bf.readLine().split(" "); //토크나이저 안쓰고 바로 분리가능 했네
 
         int n = Integer.parseInt(inputs[0]);
         int m = Integer.parseInt(inputs[1]);
@@ -60,20 +54,19 @@ public class Boj_2206 {
                 int nx = cur.x + dir_x.get(dir);
                 int ny = cur.y + dir_y.get(dir);
 
-                if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-
+                if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;   //범위 벗어난 경우
                 int nxt_cnt = cur.cnt+1;
 
-                if (table[nx][ny] == '0'){
-                    if (!cur.chance && !visited[nx][ny][0]) {
+                if (table[nx][ny] == '0'){  // 벽이 아닌 경우
+                    if (!cur.chance && !visited[nx][ny][0]) {   //벽을 지금까지 안부섰고, 방문한적이 없다.
                         q.add(new Pair(nx,ny, false, nxt_cnt));
                         visited[nx][ny][0] = true;
-                    } else if (cur.chance && !visited[nx][ny][1]) {
+                    } else if (cur.chance && !visited[nx][ny][1]) { //이미 벽을 부섰고, 방문한적이 없다.
                         q.add(new Pair(nx,ny, true, nxt_cnt));
                         visited[nx][ny][1] = true;
                     }
-                } else if (table[nx][ny] == '1') {
-                    if (!cur.chance) {
+                } else if (table[nx][ny] == '1') {  //벽인 경우
+                    if (!cur.chance) {  // 아직 한번도 안부섰으면 부수고 들어감.
                         q.add(new Pair(nx,ny, true, nxt_cnt));
                         visited[nx][ny][1] = true;
                     }
@@ -82,6 +75,5 @@ public class Boj_2206 {
         }
         System.out.println(-1);
     }
-
 }
 

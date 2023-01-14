@@ -4,7 +4,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class Boj_7569 {
-
     static int[][][] visited = new int[102][102][102];
     static List <Integer> x_dir = List.of(1, 0, 0, -1, 0 ,0 );
     static List <Integer> y_dir = List.of(0, 1, 0, 0, -1 ,0 );
@@ -41,11 +40,9 @@ public class Boj_7569 {
                 int nz = cur.z + z_dir.get(dir);
                 if (nx < 0 || nx >= n || ny < 0 || ny >= m || nz < 0 || nz >= h) continue;
                 if (visited[nx][ny][nz] >= 0) continue;
+                //3차원 배열에 대해 똑같은 bfs 실행
                 visited[nx][ny][nz] = visited[cur.x][cur.y][cur.z]+1;
-                //visited[nx][ny][nz] = 1;
                 q.add(new Coordinate(nx,ny,nz));
-                //   System.out.println("q size is   : " + q.size());
-                //cnt++;
             }
         }
         int ans = -1;
@@ -61,7 +58,6 @@ public class Boj_7569 {
             }
         }
         System.out.println(ans);
-
     }
 
     public static class Coordinate {

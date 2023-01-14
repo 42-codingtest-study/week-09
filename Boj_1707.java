@@ -10,7 +10,6 @@ public class Boj_1707 {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(bf.readLine());
         for (int idx = 0; idx < n; idx++) {
-            //loop 돌면서 그때그때
             StringTokenizer st = new StringTokenizer(bf.readLine());
             int v, e;
             v = Integer.parseInt(st.nextToken());
@@ -43,7 +42,7 @@ public class Boj_1707 {
                 q.add(node);           //1번 정점을 VIsited 1 로 하여 시작
                 visited[node] = 1;
             }
-            while (!q.isEmpty()) {
+            while (!q.isEmpty()) {  // node 점을 시작으로 BFS 시작.
                 int cur = q.peek();
                 q.remove();
 
@@ -55,7 +54,6 @@ public class Boj_1707 {
                     } else {
                         // 여기서 만약 cur 의 visited 값과 next_C 로 배정되어야 할 값이 일치한다고 나오는 경우가 사고가 난 경우임.
                         if (visited[cur] == visited[next_c]) {
-
                             System.out.println("NO");
                             return;
                         }
