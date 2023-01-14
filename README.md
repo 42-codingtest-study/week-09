@@ -1,62 +1,47 @@
-# week-09
+## BOJ 7569 <토마토>
 
-- 2023.01.09 ~ 2023.01.15
+- [문제 원본](https://www.acmicpc.net/problem/7569)
+- [BOJ7569.java](BOJ7569.java)
+- [코드 설명](https://yback.oopy.io/01e1aa4b-e550-47af-adda-819cc7bfb8bf)
 
-## 🧑🏻‍💻👩🏻‍💻 과제 시작 전에
+## BOJ7576 <토마토>
 
-문제를 풀고 제출하는 방법을 알려드립니다.
+- [문제 원본](https://www.acmicpc.net/problem/7576)
+- [BOJ7576.java](BOJ7576.java)
+- [코드 설명](https://yback.oopy.io/10387576-6072-40bc-9ce8-d895029b8e12)
 
-### 문제풀기
+## BOJ16928 <뱀과 사다리 게임>
 
-1. 레포지토리를 **클론**해줍니다.
-2. 그러고 나서 디렉토리에 들어가보면 현재 브랜치가 'main'으로 되어있을텐데, **각자의 브랜치**를 만들어서 그 공간에서만 커밋과 푸시를 해줍니다.
+- [문제 원본](https://www.acmicpc.net/problem/16928)
+- [BOJ16928.java](BOJ16928.java)
+- [코드 설명](https://yback.oopy.io/0b60c704-9c0e-44ec-a072-71cabc0ce14f)
 
-브랜치 이름은 **각자의 이름**으로 !!! 브랜치를 만드는 방법은 아래와 같습니다.
+## BOJ1707 <이분 그래프>
 
-```git
-git checkout -b chanwoong // 자신의 이름
-```
+- [문제 원본](https://www.acmicpc.net/problem/1707)
+- [BOJ1707.java](BOJ1707.java)
+- [코드 설명](https://yback.oopy.io/fab40353-1272-445a-9ff0-e71c48333ca1)
 
-브랜치마다 각자 개별 작업을 할 수 있으니 병합만 하지말아주세요.  
-**❌ 절대로 main 브랜치에 merge 하지 말아주세요 !!! ❌**
+## BOJ2206 <벽 부수고 이동하기>
 
-### 추가 사항
+- [문제 원본](https://www.acmicpc.net/problem/2206)
+- [BOJ2206.java](BOJ2206.java)
+- [코드 설명](https://yback.oopy.io/a6e48928-a481-4534-baeb-e9b3e318a5d4)
 
-기본적으로 파이썬으로 문제를 푸는것을 목표로 하고 있습니다.
+## BOJ1520 <내리막 길>
 
-그러나 다른 언어를 사용해도 괜찮습니다. 하지만 파이썬과 다른 함수 혹은 메서드를 사용한다면 간단하게 어떤 과정을 수행하는지 주석을 넣어주세요,
+- [문제 원본](https://www.acmicpc.net/problem/1520)
+- [BOJ1520.java](BOJ1520.java)
+- [코드 설명](https://yback.oopy.io/22638dad-87d7-48ea-b550-d8d23353284a)
 
-파이썬 사용하시는 분들도 어떤 의도로 코딩을 하셨는지 주석을 넣어주신다면 더욱 좋습니다 !
+## BOJ16953 <A -\> B>
 
-### 제출하기
+- [문제 원본](https://www.acmicpc.net/problem/16953)
+- [BOJ16953.java](BOJ16953.java)
+- [코드 설명](https://yback.oopy.io/10f984d2-ba94-469b-9808-bd3a80e835f2)
 
-과제를 다 푸셨다면 제출을 해주시면 됩니다. 제출 시 우리는 **Pull Request** 방법을 사용할 겁니다.
+## BOJ1325 <효율적인 해킹>
 
-1. 웹에서 https://github.com/42-codingtest-study/week-05 창을 켭니다.
-2. 메뉴에서 Pull requests를 눌러줍니다.
-3. 오른쪽에 New pull request 클릭 !
-4. base:main <- compare:main 으로 되어있다면 compare 항목 눌러서 **자신의 브랜치로 변경**
-5. 'ooo 과제 완료' 입력 후 제출 👏🏻
-
----
-
-이번 주는 **그래프**에 대해서 알아보겠습니다.
-문제는 다음과 같습니다.
-
-## 🤓 mandatory part
-
-- [토마토](https://www.acmicpc.net/problem/7576)
-- [토마토](https://www.acmicpc.net/problem/7569)
-- [뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)
-- [이분 그래프](https://www.acmicpc.net/problem/1707)
-- [벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)
-
-## 🧐 bonus part
-
-한번 도전해볼만 한 문제 -> 저번 주에 했던거 복습 + 심화
-
-- [내리막 길](https://www.acmicpc.net/problem/1520)
-- [A -> B](https://www.acmicpc.net/problem/16953)
-- [효율적인 해킹](https://www.acmicpc.net/problem/1325)
-
-<br>그럼 모두 파이팅 !!! 🔥🔥🔥
+- [문제 원본](https://www.acmicpc.net/problem/1325)
+- [BOJ1325.java](BOJ1325.java)
+- [코드 설명](https://yback.oopy.io/51517957-19e3-4056-bc3d-137b6d09ee1f)
