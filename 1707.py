@@ -16,7 +16,8 @@ for _ in range(k):
     queue = deque()
     result = True
     group = 1
-    for i in range (v):
+    for i in range (1, v+1):
+        # print(i, visited[i])
         if visited[i] == 0:
             queue.append(i)
             visited[i] = group
